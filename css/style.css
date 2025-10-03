@@ -1,0 +1,564 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.nav{
+
+width: 80px;
+height: 100%;
+background: #111;
+position: fixed;
+transition: ease-in-out .5s;
+overflow:hidden;
+
+}
+
+.nav.active li{
+
+text-align: start;
+padding-left:40px ;
+
+}
+
+.nav .apple{
+
+font-size: 38px;
+margin: 30px 0;
+
+}
+
+.nav i{
+
+  color: #fff;
+
+}
+
+.nav li {
+
+font-size: 25px;
+text-align: center;
+list-style: none;
+width: 100%;
+padding: 20px 0 ;
+
+}
+
+.nav .larg~:hover {
+
+  background: #222;
+  cursor: pointer;
+
+}
+
+.nav .larg{
+
+background: #222;
+
+}
+
+.nav .log-out{
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
+}
+
+.nav.active{
+
+width: 260px;
+height: 100vh;
+transition: ease-in-out .5s;
+
+}
+
+.nav span{
+
+display: none;
+
+}
+
+.nav.active .apple span{
+
+display: inline-block;
+margin-left: 20px;
+text-decoration: none;
+color: #fff;
+font-size: 25px;
+font-weight: bold;
+text-transform: uppercase;
+
+}
+
+.nav.active span{
+
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  
+  }
+
+.home{
+
+width: calc(100% - 80px);
+height: 100vh;
+position: relative;
+left: 80px;
+transition: ease-in-out .5s;
+
+}
+
+.home.active{
+
+    width: calc(100% - 260px);
+    height: 100vh;
+    position: relative;
+    left: 260px;
+    transition: ease-in-out .5s;
+
+}
+
+.home header{
+
+width: 100%;
+height: 80px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.home header .img-user{
+
+position: absolute;
+top: 17px;
+right: 20px;
+
+}
+
+.home header .img-user img{
+
+width: 50px;
+height: 50px;
+border: 2px solid #02c39a;
+border-radius: 100%;
+
+}
+
+.home header .img-user img:hover{
+
+cursor: pointer;
+
+}
+
+header .list i{
+
+margin: 25px 0 0 20px;
+
+}
+
+header .list i:hover{
+
+cursor: pointer;
+
+}
+
+.boxs{
+
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-bottom: 26px;
+
+}
+
+.box{
+
+    width: calc(100% / 4 - 15px);
+    background: #fff;
+    padding: 15px 14px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+
+}
+
+.box .total{
+
+display: block;
+font-size: 20px;
+text-transform: uppercase;
+margin-left: 20px;
+
+}
+
+.box .price{
+
+display: block;
+font-size: 35px;
+font-weight: bold;
+margin-top: 10px;
+margin-left: 20px;
+
+}
+
+.box .price i{
+
+padding: 10px;
+margin-left: 20px;
+border-radius: 12px;
+
+}
+
+.box .price .s-1{
+
+color: #66b0ff;
+background: #cce5ff;
+
+}
+
+.box .price .s-2{
+
+color: #2BD47D;
+background: #C0F2D8;
+
+}
+
+.box .price .s-3{
+
+color: #ffc233;
+background: #ffe8b3;
+
+}
+
+.box .price .s-4{
+
+color: #e05260;
+background: #f7d4d7;
+
+}
+
+.box .time{
+
+margin-left: 20px;
+margin-top: 5px;
+
+}
+
+.box .time i {
+
+color: #fff;
+margin-right: 10px;
+background: #02c39a;
+padding: 5px;
+border-radius: 100%;
+
+}
+
+.box .time .s-1{
+
+background: #e05260;
+
+}
+
+.home .sail{
+
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-bottom: 26px;
+
+}
+
+.home .sail .sail-box{
+
+  width: calc(100% / 2 - 15px);
+  background: #fff;
+  padding: 15px 14px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  margin-bottom: 30px;
+
+}
+
+.sail-box .right{
+
+font-size: 25px;
+font-family: Tahoma;
+font-weight: bold;
+margin-top: 10px;
+margin-left: 10px;
+display: inline-block;
+
+}
+
+.sail-box .left{
+
+display:block;
+float: right;
+margin-top: 15px;
+margin-right: 10px;
+margin-left: 10px;
+font-size: 25px;
+
+}
+
+.sail-box .left:hover{
+
+cursor: pointer;
+
+}
+
+.sail-box .circle{
+
+width: 150px;
+height: 150px;
+border-left: 10px solid transparent;
+border-right: 10px solid #5850ec;
+border-top: 10px solid #5850ec;
+border-bottom: 10px solid #5850ec;
+display: grid;
+place-items: center;
+margin:50px auto;
+border-radius: 100%;
+font-size: 30px;
+font-weight: bold;
+
+}
+
+.sail-box p{
+
+text-align: center;
+font-size: 25px;
+font-family: sans-serif;
+
+}
+
+.sail-box button{
+
+display: block;
+margin:20px auto;
+text-align: center;
+padding: 10px;
+font-size: 20px;
+font-family: sans-serif;
+color: #fff;
+background: #5850ec;
+border:none;
+outline: none;
+cursor: pointer;
+
+}
+
+.sail-box .title{
+
+  font-size: 25px;
+  font-family: Tahoma;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-left: 10px;
+  display: inline-block;
+  
+  }
+
+.sail-box .sign{
+
+  display: block;
+  float: right;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 25px;
+  background: #5850ec;
+  color: #fff;
+  padding: 10px;
+  border-radius: 100%;
+
+  }
+
+  .sail-box .address{
+
+    margin-top: 10px;
+    margin-left: 10px;
+    
+  }
+
+  .sections section{
+
+    width: calc(100% / 2 - 5px);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 12px;
+    text-align: center;
+
+  }
+
+  .sail-box .sections .one{
+
+    background: #C0F2D8;
+    color: #2BD47D;
+
+  }
+
+  .sail-box .sections .two{
+
+    background: #cce5ff;
+    color: #66b0ff;
+
+  }
+
+  .sail-box .sections .three{
+
+    background: #ccc;
+    color: #000;
+
+  }
+
+  .sail-box .sections .four{
+
+    background: #f7d4d7;
+    color: #e05260;
+
+  }
+
+  .sail-box .sections h3{
+
+    font-size: 30px;
+    font-weight: bold;
+
+  }
+
+  .sail-box .sections p{
+
+    font-size: 20px;
+    margin-top: 5px;
+
+  }
+
+
+@media (max-width: 1000px) {
+    .boxs .box{
+      width: calc(100% / 2 - 15px);
+      margin-bottom: 15px;
+    }
+  }
+ 
+  @media (max-width: 768px){
+
+    .home .sail .sail-box{
+
+      width: 100%;
+    
+    }
+
+  }
+
+  @media (max-width: 576px) {
+
+    .boxs .box{
+      width: 100%;
+      margin-bottom: 15px;
+    }
+      
+      .nav .apple{
+      
+      font-size: 30px;
+      
+      }
+      
+      .nav li {
+      
+      font-size: 20px;
+      padding: 10px 0 ;
+      
+      }
+
+      .home.active header img{
+
+        display: none;
+        
+        }
+
+        .home.active .box{
+
+          display: none;
+          
+          }
+
+          .home .sail .sail-box{
+
+            width: 100%;
+          
+          }
+
+          .sail-box .right{
+
+            font-size: 22px;
+            margin-left: 5px;
+            
+            }
+            
+            .sail-box .left{
+            
+            margin-top: 15px;
+            margin-right: 10px;
+            margin-left: 10px;
+            font-size: 22px;
+            
+            }
+
+          .home.active .sail{
+
+            display: none;
+            
+            }
+
+            .sail-box .title{
+
+              font-size: 20px;
+              margin-top: 18px;
+              margin-left: 5px;
+              
+              }
+            
+            .sail-box .sign{
+            
+              width: 40px;
+              height: 40px;
+              margin-top: 5px;
+              margin-right: 0px;
+              margin-left: 10px;
+              font-size: 22px;
+              padding: 8px;
+            
+              }
+
+              .sail-box .address{
+
+                margin-top: 10px;
+                margin-left: 5px;
+                
+              }
+
+              .sections section{
+
+                width: 100%;
+            
+              }
+
+  }
+  
